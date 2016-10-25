@@ -38,7 +38,15 @@ As it makes sense to you please write the following in JSON format:
 -   Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{
+  "jason": {
+    "cat": "mr kitty",
+    "roomates": ["DAVE", "MILLER"],
+    "loves": ["RED SOX", "PATRIOTS", "Bruins"],
+    "housing": ["123 Fake St", " 2 Muchinfo Rd"]
+  }
+
+}
 ```
 
 I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +54,21 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{
+  "jason": {
+    "cat": "mr kitty",
+    "roomates": ["DAVE", "MILLER"],
+      "DAVE": {
+        "fish": ["Bob", "Mr. MagicNibbles"],
+          "Mr. MagicNibbles": "yellow",
+          "Bob": "red"
+      },
+    },
+    "loves": ["RED SOX", "PATRIOTS", "Bruins"],
+    "housing": ["123 Fake St", " 2 Muchinfo Rd"]
+  }
+
+}
 ```
 
 ## JSON Methods
@@ -54,7 +76,7 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+jason.parse("fish", "Lobster")
 ```
 
 ## JSON Comments
@@ -62,5 +84,5 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+You cannot comment in JSON. You shouldn't because it is a string
 ```
